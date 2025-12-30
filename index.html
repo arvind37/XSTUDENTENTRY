@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <div class="container">
+        <h1>Student Entry Form</h1>
+        <p>Add students and review the list below.</p>
+        <div class="details">
+          <div class="detail1 name-input-div">
+            <label for="">Name</label>
+          <input class="name-input" type="text" name="name" id="" placeholder="e.g. MS Dhoni">
+          </div>
+          <div class="detail2 age-input-div">
+                        <label for="">Age</label>
+          <input class="age-input" type="number" name="age" id="" placeholder="e.g. 14">
+          </div>
+          <div class="detail3 grade-input-div">
+                        <label for="">Grade</label>
+          <select class="grade-input" name="grade" required>
+            <option value="" disabled selected hidden>
+              Select grade
+            </option>
+            <option value="Grade1">Grade 1</option>
+            <option value="Grade2">Grade 2</option>
+            <option value="Grade3">Grade 3</option>
+            <option value="Grade4">Grade 4</option>
+          </select>
+
+
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="addbtn btn">Add Student</button>
+          <button class="clearbtn btn">Clear</button>
+        </div>
+
+        <div class="non-rendered-text">
+          No students added yet.
+        </div>
+
+        <div class="rendered-details hide">
+          <div class="render-headings">
+            <div class="name-head">Name</div>
+            <div class="age-head">Age</div>
+            <div class="grade-head">Grade</div>
+          </div>
+          <div class="render-body">
+            
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
